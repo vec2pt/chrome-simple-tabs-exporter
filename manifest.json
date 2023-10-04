@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Simple Tabs Exporter",
     "description": "Exports urls from all open tabs in Chrome to the txt file.",
-    "version": "0.5",
+    "version": "0.9",
     "action": {
         "default_popup": "popup/popup.html",
         "default_title": "Simple Tabs Exporter"
