@@ -4,7 +4,7 @@
   <img src="./icons/icon128.png" />
 </p>
 
-Simple Tabs Exporter - Exports urls from all open tabs in Chrome to the txt file.
+Simple Tabs Exporter - Exports urls from all open tabs in Chrome to the txt file. And also allows you to import tabs from a txt file.
 
 ## Installation
 
