@@ -61,12 +61,17 @@ function importTabs() {
   fileReader.readAsText(file);
   fileReader.onload = function () {
     let fileStr = fileReader.result;
-    var separateLines = fileStr.split(/\r?\n|\r|\n/g);
-    for (const line of separateLines) {
+
+    // https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url
+    const expression = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g;
+    var regex = new RegExp(expression);
+
+    for (const line of fileStr.matchAll(regex)) {
+      var urlText = line[0];
       try {
-        let url = new URL(line);
+        // let url = new URL(urlText);
         chrome.tabs.create({
-          url: line,
+          url: urlText,
         });
       }
       catch (err) { }
