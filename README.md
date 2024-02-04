@@ -12,7 +12,7 @@ To install Simple Tabs Exporter, follow these steps:
 
 1. Clone this repository
 
-    ```git clon https://github.com/vlmarch/chrome-simple-tabs-exporter.git```
+    ```git clon https://github.com/vec2pt/chrome-simple-tabs-exporter.git```
 
 2. Follow the steps described in - [Loading an unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked).
 
